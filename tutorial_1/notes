@@ -1,0 +1,15 @@
+# Lesson 1
+
+Allways initalize gstreamer with argc and argv (gst_init (&argc, &argv);
+
+gst_parse_launch:
+source -> pipeline -> sink
+This is an "easy" pipeline.
+
+playbin:
+Element which acts as source and sink.
+Creates and connects all necessary elements.
+Takes uri=path to playup file as argument either online or local: http:// or file://.
+
+Need to set element in GST_STATE_PLAYING state otherwise it wont start
+
